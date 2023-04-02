@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLR</title>
+
+  <!-- linked styles and cdn's start -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
+    integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"
+    integrity="sha512-I+JeBiUY5B5/qJ6ey5CNqJ0yhAuNHBBbRjdM3alkabxCLz3++7hbeOScVSjyRouAihQIiint6Z2Or976vU2XuQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- linked styles and cdn's end -->
+  <!-- favicon definitions start -->
+  <link rel="apple-touch-icon" sizes="180x180" href="data/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="data/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="data/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="data/images/favicon/site.webmanifest">
+  <!-- favicon definitions end -->
+  <!-- functions start -->
+  <script defer src="js/video.js"></script>
+  <script defer src="js/form.js"></script>
+  <script defer src="js/functions.js"></script>
+  <script defer src="js/scroll.js"></script>
+  <script defer src="js/animations.js"></script>
+  <!-- functions end -->
+
+</head>
+
+<body>
+  <div id="circle"></div>
+  <div class="container">
+    <!-- Home Section -->
+    <section id="home" class="s-center panel">
+      <img src="data/images/logo/logo_white.svg" alt="MR Video and Photography Logo">
+      <span class="mobile-hide">- scroll to start -</span>
+      <span class="desktop-hide">- swipe up -</span>
+
+    </section>
+
+    <!---------------------------- Navigation Section -------------------->
+    <section id="navi" class="s-white s-center panel">
+      <ul>
+        <li>
+          <div class="jump-photo">
+            <p>photo</p>
+          </div>
+        </li>
+        <li>
+          <div class="jump-video">
+            <p>video</p>
+          </div>
+        </li>
+        <li>
+          <div class="jump-about">
+            <p>about</p>
+          </div>
+        </li>
+        <li>
+          <div class="jump-contact">
+            <p>contact</p>
+          </div>
+        </li>
+      </ul>
+      <div class="d-line-black-v d-line-1"></div>
+      <div class="d-line-black-v d-line-2"></div>
+      <div class="d-line-black-h d-line-3"></div>
+      <div class="d-line-black-h d-line-4"></div>
+      <div class="d-line-black-h d-line-5"></div>
+      <div class="d-line-black-v d-line-6"></div>
+
+
+    </section>
+
+    <!-------------------------- Photography Section -------------------->
+    <section id="photo" class="panel">
+      <h1 class="f-white">photo</h1>
+
+      <div class="gallery-container">
+
+        <div class="gallery mobile-active desktop-active">
+          <a href="gallerys/mexico.html">
+            <img src="data/images/photography/01_mexico/4.jpg" alt="Black beetle on a mexican street">
+            <h2>mexico</h2>
+          </a>
+        </div>
+
+        <div class="gallery mobile-active desktop-active">
+          <a href="gallerys/japan.html">
+            <img src="data/images/photography/02_japan/japan-4.jpg" alt="Two japanese women in a sea of white lights">
+            <h2>japan</h2>
+          </a>
+        </div>
+
+        <div class="gallery mobile-hide desktop-active">
+          <a href="gallerys/landscape.html">
+            <img src="data/images/photography/03_landscape/landscape-4644.jpg"
+              alt="A streetcar driving by at Paradeplatz Zurich, long exposure shot with art and humans in it">
+            <h2>landscape</h2>
+          </a>
+        </div>
+
+        <div class="gallery mobile-hide desktop-active">
+          <a href="gallerys/iceland.html">
+            <img src="data/images/photography/04_iceland/john-snow-cave.jpg"
+              alt="Glacier Cave with a hot steam lake in it, famous from GoT aka John Snow Cave">
+            <h2>iceland</h2>
+          </a>
+        </div>
+
+        <div class="gallery mobile-hide desktop-active">
+          <a href="gallerys/bandw.html">
+            <img src="data/images/photography/05_b&w/bandw-1155554.jpg"
+              alt="A bird sitting on a poll in the pier of Hamburg, black and white">
+            <h2>b&w</h2>
+          </a>
+        </div>
+
+        <div class="gallery mobile-hide desktop-active">
+          <a href="gallerys/hawaii.html">
+            <img src="data/images/photography/06_hawaii/hawaii-4607.jpg"
+              alt="Gap between civilization and the ocean from a mountaintop of hawaii">
+            <h2>hawaii</h2>
+          </a>
+        </div>
+
+        <div class="gallery mobile-hide desktop-hide">
+          <a href="gallerys/animals.html">
+            <img src="data/images/photography/07_animals/animals-3741.jpg"
+              alt="Glacier Cave with a hot steam lake in it, famous from GoT aka John Snow Cave">
+            <h2>animals</h2>
+          </a>
+        </div>
+
+        <div class="gallery mobile-hide desktop-hide">
+          <a href="gallerys/stormchase.html">
+            <img src="data/images/photography/08_stormchase/stormchase-8566-2.jpg"
+              alt="Glacier Cave with a hot steam lake in it, famous from GoT aka John Snow Cave">
+            <h2 class="bg-long">stormchase</h2>
+          </a>
+        </div>
+
+        <div class="gallery mobile-hide desktop-hide">
+          <a href="gallerys/firework.html">
+            <img src="data/images/photography/09_firework/firework-2723.jpg"
+              alt="Glacier Cave with a hot steam lake in it, famous from GoT aka John Snow Cave">
+            <h2>firework</h2>
+          </a>
+        </div>
+
+        <div class="gallery mobile-hide desktop-hide">
+          <a href="gallerys/forest.html">
+            <img src="data/images/photography/010_forest/untergehende-sonne.jpg"
+              alt="Glacier Cave with a hot steam lake in it, famous from GoT aka John Snow Cave">
+            <h2>forest</h2>
+          </a>
+        </div>
+
+        <div class="gallery mobile-hide desktop-hide">
+          <a href="gallerys/scotland.html">
+            <img src="data/images/photography/011_scotland/scotland-9388.jpg"
+              alt="Glacier Cave with a hot steam lake in it, famous from GoT aka John Snow Cave">
+            <h2>scotland</h2>
+          </a>
+        </div>
+
+        <div class="gallery mobile-hide desktop-hide">
+          <a href="gallerys/spooky.html">
+            <img src="data/images/photography/012_spooky/bloodmoon2018.jpg"
+              alt="Glacier Cave with a hot steam lake in it, famous from GoT aka John Snow Cave">
+            <h2>spooky</h2>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="d-line-white-h d-line-7"></div>
+      <div class="d-line-white-h d-line-8"></div>
+      <div class="d-line-white-h d-line-9"></div>
+      <div class="d-line-white-v d-line-10"></div>
+      <div class="d-line-white-v d-line-11"></div>
+      <div class="d-line-white-v d-line-12"></div>
+      <div class="d-line-white-v d-line-13"></div>
+
+
+      <div class="desktop-active mobile-hide more-btn-desktop">
+        <p class="f-white">click me for more</p>
+      </div>
+      <div class="desktop-hide more-btn">
+        <p class="f-white">more</p>
+      </div>
+
+    </section>
+
+    <!--------------------------- Videography Section ---------------------->
+    <section id="video" class="panel">
+      <h1 class="f-white">video</h1>
+      <div class="video-container">
+
+        <div href="https://www.youtube.com/embed/4eER8gFkeyk" class="gallery mobile-active gallery-2">
+          <img src="data/images/videography/couple2_cropped.jpg"
+            alt="Youtube Video Thumbnail with the description Wedding Day Ayaka & Juki in it">
+          <h2 class="bg-long">wedding A&Y</h2>
+        </div>
+
+
+        <div href="https://www.youtube.com/embed/di8SulWkjw8" class="gallery mobile-active gallery-2">
+          <img src="data/images/videography/couple1_cropped.jpg"
+            alt="Youtube Video Thumbnail with the description Wedding Day Stephanie & Pascal in it">
+          <h2 class="bg-long">wedding S&P</h2>
+        </div>
+
+
+        <div href="https://www.youtube.com/embed/VJIyzNWE5cY" class="gallery gallery-2 mobile-hide desktop-active">
+          <img src="data/images/videography/iceland_cropped.jpg"
+            alt="Youtube Video Thumbnail with the description Iceland 2016 in it">
+          <h2>timelapse</h2>
+        </div>
+
+        <div href="https://www.youtube.com/embed/Wg6xxg22GRI" class="gallery gallery-2 mobile-hide desktop-active">
+          <img src="data/images/videography/headervideo.jpg" alt="A sea of fuming Lava seen from the crater edge">
+          <h2 class="bg-long">headervideo</h2>
+        </div>
+
+        <div href="https://www.youtube.com/embed/1F3GZSG8yCw" class="gallery gallery-2 mobile-hide desktop-active">
+          <img src="data/images/videography/bloodmoon_short_cropped.jpg"
+            alt="Youtube Video Thumbnail with the description Bloodmoon in it">
+          <h2>short</h2>
+        </div>
+
+        <div href="https://www.youtube.com/embed/dzCl48sJXlI" class="gallery gallery-2 mobile-hide desktop-active">
+          <img src="data/images/videography/scotland_cropped.jpg"
+            alt="Youtube Video Thumbnail with the description A journey through Scotland in it">
+          <h2>timelapse</h2>
+        </div>
+      </div>
+
+      <div class="d-line-white-h d-line-14"></div>
+      <div class="d-line-white-h d-line-15"></div>
+      <div class="d-line-white-h d-line-16"></div>
+      <div class="d-line-white-v d-line-17"></div>
+      <div class="d-line-white-v d-line-18"></div>
+      <div class="d-line-white-v d-line-19"></div>
+
+      <div class="desktop-hide more-btn">
+        <p class="f-white">more</p>
+      </div>
+
+    </section>
+
+    <!--------------------------- About Section --------------------------->
+    <section id="about" class="s-white panel">
+      <h1>about</h1>
+
+      <div class="outer-border">
+        <img src="data/about/MLR09542.jpg" alt="Manuel on a mountain, holding up Hand at sunset">
+      </div>
+
+      <div class="about-description-container">
+        <span>
+          <q>hi. i'm manuel. i do professional photography, videography and soon web developement. hire me for your
+            project.
+          </q>
+        </span>
+      </div>
+
+      <div class="d-line-black-v d-line-20"></div>
+      <div class="d-line-black-v d-line-21"></div>
+      <div class="d-line-black-h d-line-22"></div>
+      <div class="d-line-black-h d-line-23"></div>
+      <div class="d-line-black-v d-line-24"></div>
+    </section>
+    <!--------------------------- Contact Section ---------------------------------->
+    <section id="contact" class="s-white panel">
+      <h1>contact</h1>
+      <div class="form-container">
+        <form class="all-elements">
+
+          <div class="wrap-items align-gender">
+            <label for="gender">
+              <p>gender?</p>
+            </label>
+            <input type="radio" name="gender" aria-label="gender" id="female">
+            <p>f</p>
+            <input type="radio" name="gender" aria-label="gender" id="male">
+            <p>m</p>
+            <input type="radio" name="gender" aria-label="gender" id="undefined">
+            <p>u</p>
+          </div>
+
+
+          <div class="wrap-items">
+            <label for="first-name">
+              <p>firstname?</p>
+            </label>
+            <input type="text" id="first-name">
+
+          </div>
+          <div class="wrap-items">
+            <label for="last-name">
+              <p>lastname?</p>
+            </label>
+            <input type="text" id="last-name">
+
+          </div>
+
+          <div class="wrap-items">
+            <label for="email">
+              <p>email?</p>
+            </label>
+            <input type="email" id="email">
+
+          </div>
+          <div class="wrap-items">
+            <label for="phone">
+              <p>phone?</p>
+            </label>
+            <input type="tel" id="phone">
+
+          </div>
+          <div class="rearange">
+            <div class="rearange-2">
+              <div class="wrap-items align-newsletter">
+                <label for="newsletter">
+                  <p>newsletter?</p>
+                </label>
+                <input type="radio" name="newsletter" aria-label="newsletter" id="n-yes">
+                <p>y</p>
+                <input type="radio" name="newsletter" aria-label="newsletter" id="n-no">
+                <p>n</p>
+              </div>
+              <div class="interests wrap-items">
+                <label for="interest">
+                  <p>i want:</p>
+                </label>
+                <select name="interest" id="interest">
+                  <option value="">...</option>
+                  <option value="i1">photoshooting</option>
+                  <option value="i2">videoshooting</option>
+                  <option value="i3">website</option>
+                </select>
+              </div>
+
+
+            </div>
+
+            <div class="text-area-big">
+              <label for="message">
+                <p>inquiry?</p>
+              </label>
+              <textarea placeholder="detailed description of your inquiry" id="message"></textarea>
+            </div>
+          </div>
+
+          <button class="send-form" type="submit">
+            <p>send</p>
+          </button>
+        </form>
+      </div>
+      <div class="d-line-black-v d-line-25"></div>
+      <div class="d-line-black-v d-line-26"></div>
+      <div class="d-line-black-h d-line-27"></div>
+      <div class="d-line-black-h d-line-28"></div>
+      <div class="d-line-black-v d-line-29"></div>
+    </section>
+  </div>
+
+
+</body>
+
+</html>
